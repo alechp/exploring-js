@@ -3,8 +3,10 @@
  * @Date:   2018-01-24T13:57:15-08:00
  * @Email:  alec@bubblegum.academy
  * @Last modified by:   alechp
- * @Last modified time: 2018-01-24T14:38:56-08:00
+ * @Last modified time: 2018-01-24T14:50:16-08:00
  */
+
+// https://hackernoon.com/a-definitive-guide-to-javascript-prototypes-2c263788021e
 
 const chalk = require("chalk");
 /*
