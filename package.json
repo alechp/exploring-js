@@ -12,7 +12,7 @@
     "chalk": "^2.3.0"
   },
   "scripts": {
-    "start": "babel-watch recursion.js",
+    "start": "babel-watch slice-splice.js",
     "test": "babel-watch composition.js"
   },
   "babel": {
