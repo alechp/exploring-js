@@ -3,7 +3,7 @@
  * @Date:   2018-01-30T15:56:07-08:00
  * @Email:  alec@bubblegum.academy
  * @Last modified by:   alechp
- * @Last modified time: 2018-02-02T14:39:17-08:00
+ * @Last modified time: 2018-02-02T14:45:24-08:00
  */
 
 // https://www.youtube.com/watch?v=pCqfbzj2iLY
@@ -41,6 +41,16 @@ Array.splice(start, delete);
 * deleted elements are returned as an array
  */
 
+/*
+var myFish = ['angel', 'clown', 'mandarin', 'sturgeon'];
+
+myFish.splice(2, 0, 'drum'); // insert 'drum' at 2-index position
+// myFish is ["angel", "clown", "drum", "mandarin", "sturgeon"]
+
+myFish.splice(2, 1); // remove 1 item at 2-index position (that is, "drum")
+// myFish is ["angel", "clown", "mandarin", "sturgeon"]
+*/
+
 log("-------------------");
 log("Splice");
 log("-------------------");
@@ -56,10 +66,11 @@ log("arrZ1s", arrZ1s); // [ 3, 4 ]
 
 log("-------------------");
 
-let arrZ2 = [1, 2, 3, 4, 5, 6];
-let arrZ2s = arrZ2.splice(4);
+//delete
+let arrZ2 = [1, 1, 3, 5, 8, 13];
+let arrZ2s = arrZ2.splice(4); //start deleting AFTER specified index
 log("arrZ2", arrZ2);
-log("arrZ2s", arrZ2s); // [ 5, 6 ]
+log("arrZ2s", arrZ2s); // [ 8, 13 ]
 log("-------------------");
 
 //insert but do NOT  delete
@@ -74,7 +85,6 @@ let arrZ4 = [1, 2, 3, 4, 5, 6];
 let arrZ4s = arrZ4.splice(2, 1, "a", "b");
 log("arrZ4", arrZ4);
 log("arrZ4s", arrZ4s); // [ 3 ]
-
 log("-------------------");
 
 /*
@@ -94,8 +104,8 @@ arrZ [ 1, 2, 3, 4, 5, 6 ]
 arrZ1 [ 1, 2, 5, 6 ]
 arrZ1s [ 3, 4 ]
 -------------------
-arrZ2 [ 1, 2, 3, 4 ]
-arrZ2s [ 5, 6 ]
+arrZ2 [ 1, 1, 3, 5 ]
+arrZ2s [ 8, 13 ]
 -------------------
 arrZ3 [ 1, 2, 'a', 'b', 3, 4, 5, 6 ]
 arrZ3s []
