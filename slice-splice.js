@@ -8,6 +8,7 @@
 
 // https://www.youtube.com/watch?v=pCqfbzj2iLY
 
+//NOTE: Seems that slice only produces shallow copy
 /*
 Array.slice(val1, val2)
 slice:
