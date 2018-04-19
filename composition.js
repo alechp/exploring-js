@@ -22,4 +22,5 @@ const totalDamageDorkman = dragonEvents
   .map(event => event.value)
   .reduce((prev, value) => (prev || 0) + value);
 
-console.log(`totalDamageOnDorkman: \n ${chalk.green(totalDamageDorkman)}`);
+console.log(`totalDamageOnDorkman: \n 
+${chalk.green(totalDamageDorkman)}`);
